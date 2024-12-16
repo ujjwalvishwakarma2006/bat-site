@@ -1,0 +1,96 @@
+@font-face {
+    font-family:            "Anton";
+    src:                    url('assets/fonts/Anton.ttf');
+}
+
+@font-face {
+    font-family:            "Bebas Neue";
+    src:                    url('assets/fonts/BebasNeue.ttf')
+}
+
+#main-heading {
+    height:                 11vh;
+    font-family:            'Anton', Courier, monospace;
+    justify-content:        center;
+    align-items:            center;
+    text-align:             center;
+    margin-top:             -5vh;
+}
+
+#main-heading h1 {
+    font-size:              11vh;
+}
+
+body {
+    background-image:       url('assets/images/background.png');
+    background-size:        cover;
+    background-repeat:      repeat;
+    background-attachment:  fixed;
+    background-position:    center;
+    background-color:       #5f5514;
+}
+
+
+/* START NAVIGATION PANEL STYLE */
+#navigation_panel {
+    width:                  16vw;
+    height:                 60vh;
+    display:                flex;    
+    flex-direction:         row;
+    gap:                    1.5vw;
+    margin-top:             7vh;
+    margin-left:            2vh;
+}
+
+#navigation_icons {
+    width:                  3vh;
+    display:                flex;
+    flex-direction:         column;
+    gap:                    3vh;    
+    align-items:            center;                            /* This Gap should sync with gap of navigation_texts */
+}
+
+#navigation_icons .icon_box {
+    display:                flex;
+    flex-direction:         column;
+    height:                 5vh;    
+    width:                  5vh;                               /* This height should sync with height of navigation_texts .text_box */
+    justify-content:        center;
+    align-items:            center;
+}
+
+#navigation_icons .icon {
+    width:                  6vh;
+    height:                 6vh;
+    fill:                   #f0f0f0;
+}
+
+#navigation_texts {
+    width:                  9vw;
+    font-family:            'Bebas Neue', Courier, monospace;
+    display:                flex;
+    flex-direction:         column;
+    font-size:              4.5vh;
+    gap:                    3vh;                                /* This Gap should sync with gap of navigation_icons */
+    visibility:             visible;
+}
+
+#navigation_texts .text_box {
+    display:                flex;
+    flex-direction:         column;
+    color:                  #f0f0f0;
+    justify-content:        center;
+    height:                 5vh;     
+    gap:                    0px;                           /* This height should sync with height of navigation_icons .icon_box */
+}
+
+#navigation_text .text_box p {
+    height:                 5vh;
+    justify-content:        center;
+}
+
+/* #navigation_icons:hover + #navigation_texts {
+    visibility:             visible;
+} */
+
+/* END NAVIGATION PANEL STYLE */
